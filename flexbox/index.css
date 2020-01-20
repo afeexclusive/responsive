@@ -1,0 +1,295 @@
+body{
+    background-color: darkgrey;
+}
+
+header{
+    padding: 10px;
+    background-color: #fff;
+    height: 120px;
+}
+
+div.heading{
+    margin: 25px auto 25px auto;
+}
+
+.main-heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* .main-heading span:nth-child(2){
+    background-color: yellow;
+    padding: 0 5px 0 5px;
+} */
+
+.menu{
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu span{
+    font-size: 20px;
+    flex: 1;
+}
+
+.current{
+    color: yellow;
+    padding: 0 4px 0 4px;
+    font-weight: bold;
+    background-color: grey;
+}
+
+.container{
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.form-row{
+    padding: 10px 0;
+    display: flex;
+}
+
+.form-row input{
+    flex: 1;
+}
+
+.form-row label{
+    padding-right: 10px;
+}
+
+.column-layout{
+    max-width: 1300px;
+    background-color: #fff;
+    margin: 40px auto 0 auto;
+    line-height: 1.6;
+    padding: 20px 50px;
+}
+
+.main-col{
+    flex: 2;
+    order: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 200px;
+    overflow-y: auto;
+    white-space: wrap;
+
+}
+
+.sidebar-one{
+    background-color:darkgray;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sidebar-two{
+    background-color: darkgreen;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.feature-container{
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+}
+
+.feat-col{
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.galery{
+    padding: 30px;
+    max-width: 1400px;
+    height: 230px;
+    overflow-y: auto;
+    white-space: wrap;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px auto 0 auto;
+}
+
+.gal-item{
+    color: white;
+    background-color: darkmagenta;
+    width: 150px;
+    height: 100px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 30px;   
+}
+
+.banner{
+    height: 100px;
+    max-width: 200px;
+    margin:20px auto 20px auto;
+    background-color: #2a2a2a;
+    display: flex;
+}
+
+.center-me{
+    color: white;
+    font-size: 30px;
+    margin: auto;
+}
+
+.sametallcolumn{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.first{
+    background-color: #fff;
+    padding: 20px;
+}
+.second{
+    display: flex;
+}
+.second-a{
+    background-color:lightsalmon;
+    flex: 1;
+}
+.second-b{
+    background-color: lightcoral;
+    flex: 1;
+}
+
+
+
+.feature-container div:first-child{background-color: lightgreen;}
+.feature-container div:nth-child(2){background-color: pink;}
+.feature-container div:nth-child(3){background-color: darkkhaki;}
+
+
+@media (min-width:900px){
+
+    .heading{
+        display: flex;
+    }
+
+    .main-heading{
+        flex: 2;
+    }
+
+    .menu{
+        flex:1
+    }
+
+
+    .sidebar-one, .sidebar-two{
+        display: block;
+    }
+
+    .container{
+        width:40%;
+        margin: 5px auto;
+    }
+    
+    .sametallcolumn{
+        display: flex;
+    }
+
+    .first{
+        flex: 1;
+    }
+    .second{
+        flex: 1;
+        flex-direction: column;
+    }
+    
+    .column-layout{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+    
+    .main-col{
+        flex: 2;
+        order: 2;
+        height: auto;
+    }
+    
+    .sidebar-one{
+        flex: 1;
+        order: 1;
+    }
+    
+    .sidebar-two{
+        flex: 1;
+        order: 3;
+    }
+    
+    .feature-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .feat-col{
+        flex-basis: 30%;
+    }
+
+    .galery{
+        height: auto;
+    }
+    
+}
+
+@media (min-width:768px){
+
+    .feature-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .feat-col{
+        flex-basis: 30%;
+    }
+    
+    .galery{
+        max-width: 1000px;
+    }
+
+    .sidebar-one, .sidebar-two{
+        display: block;
+    }
+
+    .menu{
+        margin: auto;
+        max-width: 400px;
+    }
+}
+
+@media (min-width:320px){
+
+    .main-heading{
+        font-size: xx-large;
+    }
+
+    .column-layout{
+        padding: 5px;
+        margin: 20px auto 0 auto;
+    }
+
+    .current{
+        color: black;
+        padding: 0;
+        font-weight: bold;
+        background-color:yellow;
+    }
+
+    .sidebar-one, .sidebar-two{
+        display: block;
+    }
+}
