@@ -43,8 +43,8 @@ header{
     background-color: #35424a;
     color: #ffffff;
     padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+    min-height: 80px;
+    border-bottom: #e8491d 4px solid;
 }
 
 header a{
@@ -86,8 +86,9 @@ header a:hover{
 
 /* showcase */
 #showcase{
+    /* margin-top: -15px; */
     min-height: 300px;
-    background: url("../img/webdsn1.png") no-repeat 0 -40px;
+    background: url("../img/webbanner.jpg") no-repeat 0 -50px;
     background-size: cover;
     text-align: center;
     color: white;
@@ -95,7 +96,7 @@ header a:hover{
 
 #showcase div.container{
     width: 50%;
-    margin: 1%;
+    margin: auto;
 }
 
 #showcase h1{
@@ -207,16 +208,18 @@ footer{
     }
 
     #showcase h1{
-        margin-top: 40px;
+        margin-top: 10px;
+        font-size: 40px;
     }
-
-    /* #showcase{
+/* 
+    #showcase{
         margin-top: -15px;
     } */
 
     #showcase div.container, div.container p{
-        width: 95%;
-        margin: 3%;
+        width: 98%;
+        margin: 0;
+        font-size: 10px;
     }
 
     #newsletter button, .quote .button_1{
@@ -232,14 +235,3 @@ footer{
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
